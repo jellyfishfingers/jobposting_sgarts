@@ -55,9 +55,14 @@
               
               print +=  '<td><p>' + jobsummary[i] + '</p>';
               
-              if(jobApplicationLink[i]!="") { 
+              //Job Application Link
+              if((jobApplicationLink[i]).toLowerCase()!="none") { 
               print += '<p><b>Job Application Link:</b><a href="' + jobApplicationLink[i] +'"> ' + jobApplicationLink[i] + '</a></p>';
               }
+
+              //Last posted in Date
+              print += '<i><p>Job Posted Date: ' +  timestamp[i] +'</p></i>';  
+
 
               print += '</td>';
               
